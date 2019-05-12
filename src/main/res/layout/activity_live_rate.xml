@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sign_in"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.iccaps.forex.LiveRateActivity">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:fitsSystemWindows="true">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+    </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            android:orientation="vertical">
+        <View
+        android:layout_width="0dp"
+        android:layout_height="50dip" />
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/duplex">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            android:padding="@dimen/duplex"
+            android:weightSum="1">
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:stretchColumns="1">
+
+                <TableRow>
+
+                    <ImageView
+                        android:layout_marginTop="1.5dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/ic_united_states" />
+
+                    <TextView
+                        android:layout_column="1"
+                        android:paddingLeft="25dp"
+                        android:text="US-Dollar"
+                         />
+                    <TextView
+                        android:layout_column="1"
+                        android:text="@string/rupees"
+                        />
+
+                    <TextView
+                        android:id="@+id/us_rate"
+                        android:gravity="right"
+                        android:padding="3dip"
+                         />
+                </TableRow>
+
+                <View
+                    android:layout_height="12dip" />
+
+
+                <TableRow>
+
+                    <ImageView
+                        android:layout_marginTop="1.5dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/ic_united_kingdom" />
+
+                    <TextView
+                        android:layout_column="1"
+                        android:paddingLeft="25dp"
+                        android:text="UK-Sterling Pound" />
+                    <TextView
+                        android:layout_column="1"
+                        android:text="@string/rupees"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/uk_pound"
+                        android:gravity="right"
+                        android:padding="3dip"
+                         />
+                </TableRow>
+
+                <View android:layout_height="12dip" />
+
+
+                <TableRow>
+
+                    <ImageView
+                        android:layout_marginTop="1.5dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/ic_japan" />
+
+                    <TextView
+                        android:layout_column="1"
+                        android:paddingLeft="25dp"
+                        android:text="Japanese Yen" />
+                    <TextView
+                        android:layout_column="1"
+                        android:text="@string/rupees"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/jap_yen"
+                        android:gravity="right"
+                        android:padding="3dip"
+                         />
+                </TableRow>
+
+                <View android:layout_height="12dip" />
+
+                <TableRow>
+
+                    <ImageView
+                        android:layout_marginTop="1.5dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/ic_switzerland" />
+
+                    <TextView
+                        android:paddingLeft="25dp"
+                        android:text="European Nations(EURO)" />
+                    <TextView
+                        android:layout_column="1"
+                        android:text="@string/rupees"
+                        />
+
+                    <TextView
+                        android:id="@+id/swizz"
+                        android:gravity="right"
+                        android:padding="3dip"
+                         />
+                </TableRow>
+
+                <View android:layout_height="12dip" />
+
+
+                <TableRow>
+
+                    <ImageView
+                        android:layout_marginTop="1.5dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/ic_canada" />
+
+                    <TextView
+                        android:paddingLeft="25dp"
+                        android:text="Candian Dollar" />
+                    <TextView
+                        android:layout_column="1"
+                        android:text="@string/rupees"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/can_dollar"
+                        android:gravity="right"
+                        android:padding="3dip"
+                        />
+                </TableRow>
+
+                <View android:layout_height="12dip" />
+                <TableRow>
+
+                    <ImageView
+                        android:layout_marginTop="1.5dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/ic_australia" />
+
+                    <TextView
+                        android:paddingLeft="25dp"
+                        android:text="Australian Dollar" />
+                    <TextView
+                        android:layout_column="1"
+                        android:text="@string/rupees"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/aus_dollar"
+                        android:gravity="right"
+                        android:padding="3dip"
+                        />
+                </TableRow>
+
+                <View android:layout_height="12dip" />
+                <TableRow>
+
+                    <ImageView
+                        android:layout_marginTop="1.5dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/ic_singapore" />
+
+                    <TextView
+                        android:paddingLeft="25dp"
+                        android:text="Singapore Dollar" />
+                    <TextView
+                        android:layout_column="1"
+                        android:text="@string/rupees"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/singapore_dollar"
+                        android:gravity="right"
+                        android:padding="3dip"
+                        />
+                </TableRow>
+
+                <View android:layout_height="12dip" />
+
+
+                <TableRow>
+
+                    <ImageView
+                        android:layout_marginTop="1.5dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/ic_saudi_arabia" />
+
+                    <TextView
+                        android:paddingLeft="25dp"
+                        android:text="Saudi Arabia" />
+                    <TextView
+                        android:layout_column="1"
+                        android:text="@string/rupees"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/saudi"
+                        android:gravity="right"
+                        android:padding="3dip"
+                        />
+                </TableRow>
+
+                <View android:layout_height="12dip" />
+                <TableRow>
+
+                    <ImageView
+                        android:layout_marginTop="1.5dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/ic_united_arab_emirates" />
+
+                    <TextView
+                        android:paddingLeft="25dp"
+                        android:text="UAE-Dirham" />
+                    <TextView
+                        android:layout_column="1"
+                        android:text="@string/rupees"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/uae"
+                        android:gravity="right"
+                        android:padding="3dip"
+                        />
+                </TableRow>
+
+                <View android:layout_height="12dip" />
+                <TableRow>
+
+                    <ImageView
+                        android:layout_marginTop="1.5dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/ic_malaysia" />
+
+                    <TextView
+                        android:paddingLeft="25dp"
+                        android:text="Malaysian Ringgit" />
+                    <TextView
+                        android:layout_column="1"
+                        android:text="@string/rupees"
+                        />
+
+                    <TextView
+                        android:id="@+id/newzeland"
+                        android:gravity="right"
+                        android:padding="3dip"
+                        />
+                </TableRow>
+
+                <View android:layout_height="12dip" />
+                <TableRow>
+
+                    <ImageView
+                        android:layout_marginTop="1.5dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/ic_hong_kong" />
+
+                    <TextView
+                        android:paddingLeft="25dp"
+                        android:text="Hong Kong Dollar" />
+                    <TextView
+                        android:layout_column="1"
+                        android:text="@string/rupees"
+                        />
+
+                    <TextView
+                        android:id="@+id/hongkong"
+                        android:gravity="right"
+                        android:padding="3dip"
+                        />
+                </TableRow>
+
+                <View android:layout_height="12dip" />
+
+
+
+
+            </TableLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+            </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+

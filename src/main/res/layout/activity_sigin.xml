@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sign_in"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.iccaps.forex.Sigin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:fitsSystemWindows="true">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFF"
+                android:fitsSystemWindows="true"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.AppBarLayout>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="30dip" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="76dp"
+            android:src="@drawable/logo"
+            android:background="@color/shade_white_cc"
+            android:layout_gravity="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/input_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_top_bottom"
+                        android:drawableLeft="@drawable/ic_phone"
+                        android:drawablePadding="@dimen/primary"
+                        android:drawableStart="@drawable/ic_phone"
+                        android:hint="Phone Number"
+                        android:inputType="number|phone"
+                        android:maxLength="10"
+                        android:paddingBottom="16dp"
+                        android:paddingEnd="@dimen/medium"
+                        android:paddingStart="@dimen/medium"
+                        android:paddingTop="16dp"
+                        android:textSize="@dimen/primary_txt" />
+
+                    <EditText
+                        android:id="@+id/input_pass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_bottom"
+                        android:drawableLeft="@drawable/ic_key"
+                        android:drawablePadding="@dimen/primary"
+                        android:drawableStart="@drawable/ic_key"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:paddingBottom="16dp"
+                        android:paddingEnd="@dimen/medium"
+                        android:paddingStart="@dimen/medium"
+                        android:paddingTop="16dp"
+                        android:textSize="@dimen/primary_txt" />
+
+                    <TextView
+                        android:id="@+id/txt_forgot_pass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_margin="@dimen/secondary"
+                        android:gravity="center"
+                        android:lineSpacingExtra="@dimen/lite"
+                        android:padding="@dimen/primary"
+                        android:text="Forgot Password?"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/small_txt" />
+
+                </LinearLayout>
+
+            </android.support.v4.widget.NestedScrollView>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimaryDark"
+            android:foreground="?attr/selectableItemBackground"
+            android:onClick="onClick2"
+            android:text="SIGN IN"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</LinearLayout>
+

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/money_transfer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:fitsSystemWindows="true">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+    <!--<ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="76dp"
+        android:src="@drawable/logo"
+        android:background="@color/shade_white_cc"
+        android:layout_gravity="center" />
+-->
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/duplex">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/duplex"
+            android:weightSum="1">
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/duplex">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/input_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Name"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapWords|textMultiLine"
+                    android:textSize="@dimen/small_txt" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/extra_duplex"
+                android:layout_marginStart="@dimen/extra_duplex"
+                android:layout_marginTop="@dimen/extra_duplex"
+                android:text="Mobile Number"
+                android:textSize="@dimen/small_txt"
+                android:layout_weight="0.27" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/lite">
+
+
+                <TextView
+                    android:id="@+id/txt_total_appointment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_marginBottom="@dimen/duplex"
+                    android:layout_marginTop="9dp"
+                    android:text="+91"
+                    android:textColor="@color/black_90"
+                    android:textSize="15sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <EditText
+                        android:id="@+id/input_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0.5dp"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:textSize="@dimen/primary_txt" />
+
+                    <pl.droidsonroids.gif.GifImageView
+                        android:id="@+id/verified"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="7dp"
+                        android:src="@drawable/tick" />
+                </RelativeLayout>
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="50dp"
+                android:text="Submit Your Details we weill reach you shortly"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/citytext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/extra_duplex"
+                android:layout_marginStart="@dimen/extra_duplex"
+                android:layout_marginTop="@dimen/extra_duplex"
+                android:text="Customer Branch"
+                android:textSize="@dimen/small_txt" />
+
+            <Spinner
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/duplex"
+                android:layout_marginStart="@dimen/duplex"
+                android:entries="@array/city"
+                android:padding="5dp"
+                android:spinnerMode="dialog"
+                android:textSize="@dimen/small_txt" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/extra_duplex"
+                android:layout_marginStart="@dimen/extra_duplex"
+                android:layout_marginTop="@dimen/extra_duplex"
+                android:text="Branch Address"
+                android:textSize="@dimen/small_txt" />
+
+            <TextView
+                android:id="@+id/input_branchaddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/primary"
+                android:background="@drawable/bg_grey_round_stroke_grey"
+                android:gravity="top"
+                android:hint=" Branch Address"
+                android:lineSpacingExtra="@dimen/lite"
+                android:lines="4"
+                android:paddingBottom="16dp"
+                android:paddingEnd="@dimen/primary"
+                android:paddingStart="@dimen/primary"
+                android:paddingTop="16dp"
+                android:textSize="@dimen/small_txt" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <Button
+        android:id="@+id/buy"
+        android:layout_width="244dp"
+        android:layout_height="33dp"
+        android:layout_marginLeft="55dp"
+        android:background="@color/colorPrimaryDark"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="Book"
+        android:textColor="@android:color/white"
+        tools:ignore="NestedWeights" />
+</LinearLayout>

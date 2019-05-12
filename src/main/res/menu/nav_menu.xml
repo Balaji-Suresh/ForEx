@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:checked="true"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/nav_orders"
+            android:icon="@drawable/ic_note"
+            android:title="Buy Forex" />
+        <item
+            android:id="@+id/nav_profile"
+            android:checked="true"
+            android:icon="@drawable/ic_euro"
+            android:title="Live Rates" />
+        <item
+            android:id="@+id/nav_share_app"
+            android:icon="@drawable/ic_connections"
+            android:title="Share" />
+        <item
+            android:id="@+id/nav_call_us_now"
+            android:icon="@drawable/ic_call_us"
+            android:title="Call Us Now" />
+        <item
+            android:id="@+id/nav_about_us"
+            android:icon="@drawable/ic_folders"
+            android:title="About US" />
+
+    </group>
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_iccaps"
+            android:enabled="false"
+            android:title="@null"
+            app:actionLayout="@layout/nav_iccaps"
+            app:showAsAction="always" />
+    </group>
+</menu>

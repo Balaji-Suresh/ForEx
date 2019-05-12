@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sign_up"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.iccaps.forex.Signup">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:fitsSystemWindows="true">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFF"
+                    android:fitsSystemWindows="true"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+                </android.support.v7.widget.Toolbar>
+            </android.support.design.widget.AppBarLayout>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="10dip" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="76dp"
+                android:src="@drawable/logo"
+                android:background="@color/shade_white_cc"
+                android:layout_gravity="center" />
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <EditText
+
+                        android:id="@+id/input_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_top_bottom"
+                        android:drawableLeft="@drawable/ic_user"
+                        android:drawablePadding="@dimen/primary"
+                        android:drawableStart="@drawable/ic_user"
+                        android:hint="Name"
+                        android:inputType="textPersonName"
+                        android:paddingBottom="@dimen/input"
+                        android:paddingEnd="@dimen/medium"
+                        android:paddingStart="@dimen/medium"
+                        android:paddingTop="@dimen/input"
+                        android:textSize="@dimen/primary_txt" />
+
+                    <EditText
+                        android:id="@+id/input_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_bottom"
+                        android:drawableLeft="@drawable/ic_mail"
+                        android:drawablePadding="@dimen/primary"
+                        android:drawableStart="@drawable/ic_mail"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress"
+                        android:paddingBottom="@dimen/input"
+                        android:paddingEnd="@dimen/medium"
+                        android:paddingStart="@dimen/medium"
+                        android:paddingTop="@dimen/input"
+                        android:textSize="@dimen/primary_txt" />
+
+                    <TextView
+                        android:id="@+id/input_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_bottom"
+                        android:drawableLeft="@drawable/ic_phone"
+                        android:drawablePadding="@dimen/primary"
+                        android:drawableStart="@drawable/ic_phone"
+                        android:hint="Phone "
+                        android:inputType="number|phone"
+                        android:maxLength="10"
+                        android:paddingBottom="@dimen/input"
+                        android:paddingEnd="@dimen/medium"
+                        android:paddingStart="@dimen/medium"
+                        android:paddingTop="@dimen/input"
+                        android:textSize="@dimen/primary_txt" />
+
+                    <EditText
+                        android:id="@+id/input_pass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_bottom"
+                        android:drawableLeft="@drawable/ic_key"
+                        android:drawablePadding="@dimen/primary"
+                        android:drawableStart="@drawable/ic_key"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:paddingBottom="@dimen/input"
+                        android:paddingEnd="@dimen/medium"
+                        android:paddingStart="@dimen/medium"
+                        android:paddingTop="@dimen/input"
+                        android:textSize="@dimen/primary_txt" />
+                    <EditText
+                        android:id="@+id/input_passport"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_bottom"
+                        android:drawableLeft="@drawable/ic_passport"
+                        android:drawablePadding="@dimen/primary"
+                        android:drawableStart="@drawable/ic_passport"
+                        android:hint="Passport Number"
+                        android:inputType="text"
+                        android:maxLength="8"
+                        android:paddingBottom="@dimen/input"
+                        android:paddingEnd="@dimen/medium"
+                        android:paddingStart="@dimen/medium"
+                        android:paddingTop="@dimen/input"
+                        android:textSize="@dimen/primary_txt" />
+                    <EditText
+                        android:id="@+id/input_aadhar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_bottom"
+                        android:drawableLeft="@drawable/ic_id_card"
+                        android:drawablePadding="@dimen/primary"
+                        android:drawableStart="@drawable/ic_id_card"
+                        android:hint="Aadhar Number"
+                        android:inputType="number"
+                        android:maxLength="12"
+                        android:paddingBottom="@dimen/input"
+                        android:paddingEnd="@dimen/medium"
+                        android:paddingStart="@dimen/medium"
+                        android:paddingTop="@dimen/input"
+                        android:textSize="@dimen/primary_txt" />
+
+
+                </LinearLayout>
+
+            </android.support.v4.widget.NestedScrollView>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimaryDark"
+            android:foreground="?attr/selectableItemBackground"
+            android:onClick="onClick"
+            android:text="SIGN UP"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/primary_txt" />
+
+    </LinearLayout>
+</LinearLayout>
+    </LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0156a9</color>
+    <color name="colorPrimaryDark">#004d98</color>
+    <color name="colorAccent">#0156a9</color>
+    <color name="primary_txt">#212121</color>
+    <color name="secondary_txt">#757575</color>
+    <color name="divider">#BDBDBD</color>
+
+    <color name="grey">#e4e4e4</color>
+    <color name="red">#ef5350</color>
+    <color name="yellow">#edc50d</color>
+    <color name="green">#00c654</color>
+    <color name="violet">#673AB7</color>
+    <color name="blue">#3697d9</color>
+    <color name="orange">#F15A29</color>
+    <color name="facebook">#3b5998</color>
+    <color name="google">#dd4b39</color>
+
+    <color name="white_20">#20FFFFFF</color>
+    <color name="white_60">#60FFFFFF</color>
+    <color name="white_90">#90FFFFFF</color>
+    <color name="black_40">#40000000</color>
+    <color name="black_90">#90000000</color> <color name="bordercolor">#bdbdbd</color>
+    <color name="shade_black_60">#60000000</color>
+    <color name="shade_white_cc">#CCFFFFFF</color>
+    <color name="border">#DBD9DB</color>
+    <color name="product_grey">#D0CED0</color>
+    <color name="product_black">#252525</color>
+    <color name="background">#F8F8F8</color>
+    <color name="grey_light">#e9e8e9</color>
+    <color name="black_overlay">#66000000</color>
+
+
+</resources>

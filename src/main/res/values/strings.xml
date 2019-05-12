@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">ForEx</string>
+    <string name="txt_forgot_pass"><u>Forgot password?</u></string>
+    <string name="txt_resend_otp"><u>Resend Otp</u></string>
+    <string name="drawer_open">Open Drawer</string>
+    <string name="drawer_close">Close Drawer</string>
+    <string name="format_emp_id">Emp Id: %1$s</string>
+    <string name="format_name">%s</string>
+    <string name="format_description">%s</string>
+    <string name="format_status">Appointment - %s</string>
+    <string name="format_status_call"> FollowUp - %s</string>
+    <string name="action_notification">Notification</string>
+    <string name="razorpay_api_key" translatable="false">rzp_live_M5DN2XqTnAw7AP</string>
+
+    <string name="error_no_internet">No internet connection</string>
+    <string name="error_unexpected">Oops! Something went wrong!</string>
+    <string name="error_empty">%1$s cannot be empty</string>
+    <string name="error_length">%1$s must be %2$d %3$s</string>
+    <string name="error_pass_length">Password must be min 6 chars</string>
+    <string name="error_exit">Press back again to exit</string>
+    <string name="error_pass_mismatch">Passwords doesn\'t match</string>
+    <string name="error_invalid">Invalid %1$s</string>
+    <string name="error_service">Sorry, service not available</string>
+    <string name="error_location">Pick a valid location</string>
+    <string name="error_select">Please select a </string>
+    <string name="error_porter">Sorry, porter not available</string>
+    <string name="error_network">Some network error occurred. Please try again.</string>
+    <string name="error_empty_order">No orders found</string>
+    <string name="rupees">\u20B9</string>
+
+
+    <string name="error_empty_trip">You haven\'t made any trips yet</string>
+    <string name="error_wrong">Uh-Oh!</string>
+    <string name="error_refresh">Slow or no internet connection.\nPlease check your internet settings and try again.</string>
+
+    <string name="format_emp_type">Role:%s</string>
+
+
+</resources>

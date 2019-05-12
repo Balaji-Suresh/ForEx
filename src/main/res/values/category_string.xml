@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="vehicle"> Vehicles </string>
+    <string-array name="vehicle_type">
+        <item>Select Purpose</item>
+    </string-array>
+
+    <string-array name="person_list">
+        <item>Select Number Of Travellers</item>
+           </string-array>
+    <string-array name="forex_type">
+        <item>Select Type</item>
+        <item> Forex Card BPC</item>
+        <item> Cash </item>
+        <item> Travel Cheque</item>
+    </string-array>
+    <string-array name="forex_sell_type">
+        <item>Select Type</item>
+        <item> Cash</item>
+        <item> Travel Cheque</item>
+    </string-array>
+    <string-array name="currency">
+        <item>Select your Currency</item>
+        <item>USD</item>
+        <item>Euro</item>
+        <item>Sterling Pound</item>
+        <item>Japnese Yen</item>
+    </string-array>
+    <string-array name="state">
+        <item>Select your State</item>
+    </string-array>
+    <string-array name="city">
+        <item>Select your Branch</item>
+
+    </string-array>
+    <string-array name="proof">
+        <item>Select your Proof</item>
+        <item>Aadhar Card</item>
+        <item>Voter ID</item>
+        <item>Passport</item>
+        <item>Driving License</item>
+    </string-array>
+</resources>
