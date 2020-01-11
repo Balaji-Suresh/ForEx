@@ -275,7 +275,7 @@ public class MainActivity extends AppCompatActivity
         Activity.launchClearStack(this, MainActivity.class);
     }
 
-    
+
 
     private void shareApp() {
         Intent shareIntent = new Intent(Intent.ACTION_SEND);
