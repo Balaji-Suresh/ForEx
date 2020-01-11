@@ -4,8 +4,11 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 import android.content.res.Configuration;
 import android.net.Uri;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.IdRes;
@@ -54,6 +57,9 @@ import com.iccaps.forex.app.PreferenceManager;
 import com.iccaps.forex.app.ToastBuilder;
 import com.iccaps.forex.app.VolleyErrorHandler;
 
+import org.json.JSONObject;
+import org.w3c.dom.Document;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -78,6 +84,7 @@ public class MainActivity extends AppCompatActivity
     private ActionBarDrawerToggle mDrawerToggle;
     private Context mContext;
     private Toolbar mToolbar;
+    String currentVersion, latestVersion;
     boolean backPressed = false;
     boolean backPressedTwice = false;
     @Override
@@ -268,8 +275,7 @@ public class MainActivity extends AppCompatActivity
         Activity.launchClearStack(this, MainActivity.class);
     }
 
-
-
+    
 
     private void shareApp() {
         Intent shareIntent = new Intent(Intent.ACTION_SEND);
@@ -310,14 +316,15 @@ public class MainActivity extends AppCompatActivity
         if (id == 0) {
             launch(mContext, BuyForexActivity.class);
         } else if (id == 1) {
-            View mView = LayoutInflater.from(mContext).inflate(R.layout.dialog_session, null);
+            launch(mContext,SellForexActivity.class);
+           /*View mView = LayoutInflater.from(mContext).inflate(R.layout.dialog_session, null);
             ImageView imageViewClose = (ImageView) mView.findViewById(R.id.img_close);
             RadioGroup session = (RadioGroup)mView.findViewById(R.id.sessionlayout);
             RadioButton mGuest = (RadioButton) mView.findViewById(R.id.rdo_guest);
             RadioButton mLogin = (RadioButton) mView.findViewById(R.id.rdo_existing_user);
             final Button mContinue = (Button) mView.findViewById(R.id.btn_add1);
             mContinue.setVisibility(View.GONE);
-            /*final TextView mRegister = (TextView) mView.findViewById(R.id.txt_register);*/
+            *//*final TextView mRegister = (TextView) mView.findViewById(R.id.txt_register);*//*
             final Button mLoginButton = (Button) mView.findViewById(R.id.login);
             mLoginButton.setVisibility(View.GONE);
             session.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
@@ -327,15 +334,15 @@ public class MainActivity extends AppCompatActivity
                         mContinue.setVisibility(View.GONE);
                     } else if(checkedId == R.id.rdo_guest){
                         mContinue.setVisibility(View.VISIBLE);
-                        /*mRegister.setVisibility(View.GONE);*/
+                        *//*mRegister.setVisibility(View.GONE);*//*
                         mLoginButton.setVisibility(View.GONE);
 
                     }
                 }
             });
 
-            /*final EditText mNumber = (EditText) mView.findViewById(R.id.input_mob_number);
-            *//*mNumber.setText(mPreferenceManager.getPhone());*/
+            *//*final EditText mNumber = (EditText) mView.findViewById(R.id.input_mob_number);
+            *//**//*mNumber.setText(mPreferenceManager.getPhone());*//*
             AlertDialog.Builder builder = new AlertDialog.Builder(mContext);
             builder.setView(mView);
             final AlertDialog alertDialog = builder.create();
@@ -345,7 +352,7 @@ public class MainActivity extends AppCompatActivity
                 @Override
                 public void onClick(View v) {
                     mLoginButton.setVisibility(View.VISIBLE);
-                    /*mRegister.setVisibility(View.VISIBLE);*/
+                    *//*mRegister.setVisibility(View.VISIBLE);*//*
 
                 }
             });
@@ -366,7 +373,7 @@ public class MainActivity extends AppCompatActivity
                 public void onClick(View v) {
                     Activity.launch(mContext, SignUpSell.class);
                 }
-            });
+            });*/
             /*mRegister.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

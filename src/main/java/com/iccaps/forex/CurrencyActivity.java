@@ -242,7 +242,8 @@ public class CurrencyActivity extends AppCompatActivity implements View.OnClickL
         int Currency = mCurrency.getSelectedItemPosition();
         if(validateInput(FXAmount,Type,Currency)){
             processBundle();
-            promptBookingDialog();
+            Activity.launch(mContext, PaymentActivity.class);
+            //promptBookingDialog();
         }
     }
     private boolean validateInput(String FxAmount, int Type,int Currency) {

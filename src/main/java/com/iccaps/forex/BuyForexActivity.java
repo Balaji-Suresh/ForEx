@@ -86,8 +86,8 @@ public class BuyForexActivity extends AppCompatActivity implements View.OnClickL
     private ProgressDialog mProgressDialog;
     private String dateh;
     private String name;
-    private String Address1,Address2,Address3,Address4,Address5,Address6,Address7,Address8,Address9,Address10,Address11,Address12,Address13,Address14,Address15,Address16,Address17;
-    private String Phone1,Phone2,Phone3,Phone4,Phone5,Phone6,Phone7,Phone8,Phone9,Phone10,Phone11,Phone12,Phone13,Phone14,Phone15,Phone16,Phone17;
+    private String Address1,Address2,Address3,Address4,Address5,Address6,Address7,Address8,Address9,Address10,Address11,Address12,Address13,Address14,Address15,Address16,Address17,Address18,Address19,Address20,Address21,Address22,Address23,Address24,Address25,Address26,Address27,Address28,Address29,Address30;
+    private String Phone1,Phone2,Phone3,Phone4,Phone5,Phone6,Phone7,Phone8,Phone9,Phone10,Phone11,Phone12,Phone13,Phone14,Phone15,Phone16,Phone17,Phone18,Phone19,Phone20,Phone21,Phone22,Phone23,Phone24,Phone25,Phone26,Phone27,Phone28,Phone29,Phone30;
     private String Mobile;
     int Branch,Travel,Purpose;
 
@@ -130,6 +130,18 @@ public class BuyForexActivity extends AppCompatActivity implements View.OnClickL
                 handleAddress15(response);
                 handleAddress16(response);
                 handleAddress17(response);
+                handleAddress18(response);
+                handleAddress19(response);
+                handleAddress20(response);
+                handleAddress21(response);
+                handleAddress22(response);
+                handleAddress23(response);
+                handleAddress24(response);
+                handleAddress25(response);
+                handleAddress26(response);
+                handleAddress28(response);
+                handleAddress29(response);
+                handleAddress30(response);
             }
         }, new com.android.volley.Response.ErrorListener() {
             @Override
@@ -393,6 +405,207 @@ public class BuyForexActivity extends AppCompatActivity implements View.OnClickL
                 int id = jsonObject.getInt(KEY_ID);
                 Address17 = jsonObject.getString(KEY_ADDRESS);
                 Phone17 = jsonObject.getString(KEY_PHONE);
+
+            } Log.d("resp", response.toString());
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void handleAddress18(JSONObject response) {
+        try {
+            JSONArray jsonArray = response.getJSONArray(KEY_ADDRESS);
+            {
+                JSONObject jsonObject = jsonArray.getJSONObject(17);
+
+                int id = jsonObject.getInt(KEY_ID);
+                Address18 = jsonObject.getString(KEY_ADDRESS);
+                Phone18 = jsonObject.getString(KEY_PHONE);
+
+            } Log.d("resp", response.toString());
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void handleAddress19(JSONObject response) {
+        try {
+            JSONArray jsonArray = response.getJSONArray(KEY_ADDRESS);
+            {
+                JSONObject jsonObject = jsonArray.getJSONObject(18);
+
+                int id = jsonObject.getInt(KEY_ID);
+                Address19 = jsonObject.getString(KEY_ADDRESS);
+                Phone19 = jsonObject.getString(KEY_PHONE);
+
+            } Log.d("resp", response.toString());
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void handleAddress20(JSONObject response) {
+        try {
+            JSONArray jsonArray = response.getJSONArray(KEY_ADDRESS);
+            {
+                JSONObject jsonObject = jsonArray.getJSONObject(19);
+
+                int id = jsonObject.getInt(KEY_ID);
+                Address20 = jsonObject.getString(KEY_ADDRESS);
+                Phone20 = jsonObject.getString(KEY_PHONE);
+
+            } Log.d("resp", response.toString());
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void handleAddress21(JSONObject response) {
+        try {
+            JSONArray jsonArray = response.getJSONArray(KEY_ADDRESS);
+            {
+                JSONObject jsonObject = jsonArray.getJSONObject(20);
+
+                int id = jsonObject.getInt(KEY_ID);
+                Address21 = jsonObject.getString(KEY_ADDRESS);
+                Phone21 = jsonObject.getString(KEY_PHONE);
+
+            } Log.d("resp", response.toString());
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void handleAddress22(JSONObject response) {
+        try {
+            JSONArray jsonArray = response.getJSONArray(KEY_ADDRESS);
+            {
+                JSONObject jsonObject = jsonArray.getJSONObject(21);
+
+                int id = jsonObject.getInt(KEY_ID);
+                Address22 = jsonObject.getString(KEY_ADDRESS);
+                Phone22 = jsonObject.getString(KEY_PHONE);
+
+            } Log.d("resp", response.toString());
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+    }
+    private void handleAddress23(JSONObject response) {
+        try {
+            JSONArray jsonArray = response.getJSONArray(KEY_ADDRESS);
+            {
+                JSONObject jsonObject = jsonArray.getJSONObject(22);
+
+                int id = jsonObject.getInt(KEY_ID);
+                Address23 = jsonObject.getString(KEY_ADDRESS);
+                Phone23 = jsonObject.getString(KEY_PHONE);
+
+            } Log.d("resp", response.toString());
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+    }
+    private void handleAddress24(JSONObject response) {
+        try {
+            JSONArray jsonArray = response.getJSONArray(KEY_ADDRESS);
+            {
+                JSONObject jsonObject = jsonArray.getJSONObject(23);
+
+                int id = jsonObject.getInt(KEY_ID);
+                Address24 = jsonObject.getString(KEY_ADDRESS);
+                Phone24 = jsonObject.getString(KEY_PHONE);
+
+            } Log.d("resp", response.toString());
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void handleAddress25(JSONObject response) {
+        try {
+            JSONArray jsonArray = response.getJSONArray(KEY_ADDRESS);
+            {
+                JSONObject jsonObject = jsonArray.getJSONObject(24);
+
+                int id = jsonObject.getInt(KEY_ID);
+                Address25 = jsonObject.getString(KEY_ADDRESS);
+                Phone25 = jsonObject.getString(KEY_PHONE);
+
+            } Log.d("resp", response.toString());
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+    }
+    private void handleAddress26(JSONObject response) {
+        try {
+            JSONArray jsonArray = response.getJSONArray(KEY_ADDRESS);
+            {
+                JSONObject jsonObject = jsonArray.getJSONObject(25);
+
+                int id = jsonObject.getInt(KEY_ID);
+                Address26 = jsonObject.getString(KEY_ADDRESS);
+                Phone26 = jsonObject.getString(KEY_PHONE);
+
+            } Log.d("resp", response.toString());
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+    }
+    private void handleAddress27(JSONObject response) {
+        try {
+            JSONArray jsonArray = response.getJSONArray(KEY_ADDRESS);
+            {
+                JSONObject jsonObject = jsonArray.getJSONObject(26);
+
+                int id = jsonObject.getInt(KEY_ID);
+                Address27 = jsonObject.getString(KEY_ADDRESS);
+                Phone27 = jsonObject.getString(KEY_PHONE);
+
+            } Log.d("resp", response.toString());
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+    }
+    private void handleAddress28(JSONObject response) {
+        try {
+            JSONArray jsonArray = response.getJSONArray(KEY_ADDRESS);
+            {
+                JSONObject jsonObject = jsonArray.getJSONObject(27);
+
+                int id = jsonObject.getInt(KEY_ID);
+                Address28 = jsonObject.getString(KEY_ADDRESS);
+                Phone28 = jsonObject.getString(KEY_PHONE);
+
+            } Log.d("resp", response.toString());
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+    }
+    private void handleAddress29(JSONObject response) {
+        try {
+            JSONArray jsonArray = response.getJSONArray(KEY_ADDRESS);
+            {
+                JSONObject jsonObject = jsonArray.getJSONObject(28);
+
+                int id = jsonObject.getInt(KEY_ID);
+                Address29 = jsonObject.getString(KEY_ADDRESS);
+                Phone29 = jsonObject.getString(KEY_PHONE);
+
+            } Log.d("resp", response.toString());
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+    }
+    private void handleAddress30(JSONObject response) {
+        try {
+            JSONArray jsonArray = response.getJSONArray(KEY_ADDRESS);
+            {
+                JSONObject jsonObject = jsonArray.getJSONObject(29);
+
+                int id = jsonObject.getInt(KEY_ID);
+                Address30 = jsonObject.getString(KEY_ADDRESS);
+                Phone30 = jsonObject.getString(KEY_PHONE);
 
             } Log.d("resp", response.toString());
         } catch (JSONException e) {
@@ -870,7 +1083,45 @@ public class BuyForexActivity extends AppCompatActivity implements View.OnClickL
                     mAddress.setText(String.valueOf(Address16)+"\n"+"Phone:"+String.valueOf(Phone16));
                 } else if(selectedItem == 17){
                     mAddress.setText(String.valueOf(Address17)+"\n"+"Phone:"+String.valueOf(Phone17));
-
+                }
+                else if(selectedItem == 18){
+                    mAddress.setText(String.valueOf(Address18)+"\n"+"Phone:"+String.valueOf(Phone18));
+                }
+                else if(selectedItem == 19){
+                    mAddress.setText(String.valueOf(Address19)+"\n"+"Phone:"+String.valueOf(Phone19));
+                }
+                else if(selectedItem == 20){
+                    mAddress.setText(String.valueOf(Address20)+"\n"+"Phone:"+String.valueOf(Phone20));
+                }
+                else if(selectedItem == 21){
+                    mAddress.setText(String.valueOf(Address21)+"\n"+"Phone:"+String.valueOf(Phone21));
+                }
+                else if(selectedItem == 22){
+                    mAddress.setText(String.valueOf(Address22)+"\n"+"Phone:"+String.valueOf(Phone22));
+                }
+                else if(selectedItem == 23){
+                    mAddress.setText(String.valueOf(Address23)+"\n"+"Phone:"+String.valueOf(Phone23));
+                }
+                else if(selectedItem == 24){
+                    mAddress.setText(String.valueOf(Address24)+"\n"+"Phone:"+String.valueOf(Phone24));
+                }
+                else if(selectedItem == 25){
+                    mAddress.setText(String.valueOf(Address25)+"\n"+"Phone:"+String.valueOf(Phone25));
+                }
+                else if(selectedItem == 26){
+                    mAddress.setText(String.valueOf(Address26)+"\n"+"Phone:"+String.valueOf(Phone26));
+                }
+                else if(selectedItem == 27){
+                    mAddress.setText(String.valueOf(Address27)+"\n"+"Phone:"+String.valueOf(Phone27));
+                }
+                else if(selectedItem == 28){
+                    mAddress.setText(String.valueOf(Address28)+"\n"+"Phone:"+String.valueOf(Phone28));
+                }
+                else if(selectedItem == 29){
+                    mAddress.setText(String.valueOf(Address29)+"\n"+"Phone:"+String.valueOf(Phone29));
+                }
+                else if(selectedItem == 30){
+                    mAddress.setText(String.valueOf(Address30)+"\n"+"Phone:"+String.valueOf(Phone30));
                 }
             }
 
